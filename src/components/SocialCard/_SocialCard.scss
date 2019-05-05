@@ -1,0 +1,31 @@
+.social-card {
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: $break-mobile-small) {
+    width: 90%;
+  }
+}
+
+.social-card__icon {
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 64px;
+  color: $color-text-lighter;
+}
+
+.social-card__text {
+  font-size: 36px;
+  text-align: center;
+  color: $color-text-light;
+}

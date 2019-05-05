@@ -1,0 +1,26 @@
+// Get font
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
+$font-heebo: 'Heebo', sans-serif;
+
+html, body, #root, .app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $font-heebo;
+  font-weight: 400;
+}
+
+// Media queries
+$break-mobile: 700px;
+$break-mobile-small: 500px;
+
+// Partials
+@import './styles/colors';
+
+// Import component styles
+@import './components/Navbar/Navbar';
+@import './components/SocialCard/SocialCard';
+
+// Import view styles
+@import './views/HomeView/HomeView';
