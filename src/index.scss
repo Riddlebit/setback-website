@@ -27,3 +27,5 @@ $break-mobile-small: 500px;
 // Import view styles
 @import './views/HomeView/HomeView';
 @import './views/AboutView/AboutView';
+@import './views/BlogListView/BlogListView';
+@import './views/BlogPostView/BlogPostView';

@@ -1,0 +1,24 @@
+.blog-post {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-post__container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 50px;
+  padding-top: 80px;
+  color: $color-text;
+  @media screen and (max-width: $break-mobile) {
+    padding: 20px;
+    padding-top: 70px;
+  }
+}
+
+.blog-post h1 {
+  font-weight: 300;
+}
+
+.blog-post img {
+  width: 100%;
+}
