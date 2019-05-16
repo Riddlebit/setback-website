@@ -17,6 +17,7 @@ $break-mobile-small: 500px;
 
 // Partials
 @import './styles/colors';
+@import './styles/mixins';
 
 // Import component styles
 @import './components/Navbar/Navbar';
