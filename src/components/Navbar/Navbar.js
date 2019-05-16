@@ -54,6 +54,14 @@ class Navbar extends Component {
           >
             About
           </NavLink>
+          <NavLink
+            to="/blog"
+            className="navbar__navlink"
+            activeClassName="navbar__navlink--selected"
+            onClick={this.closeNav}
+          >
+            Blog
+          </NavLink>
         </nav>
       </div>
     );
