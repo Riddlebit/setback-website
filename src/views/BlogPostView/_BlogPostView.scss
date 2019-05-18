@@ -15,7 +15,17 @@
   }
 }
 
-.blog-post h1 {
+.blog-post__back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: $color-text-light;
+  text-decoration: none;
+  & > * {
+    padding-right: 5px;
+  }
+}
+
+.blog-post h1, h2, h3 {
   font-weight: 300;
 }
 
