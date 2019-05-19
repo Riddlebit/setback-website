@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import { ReactComponent as RiddlebitLogo } from '../../assets/riddlebit_logo.svg';
 
 class Navbar extends Component {
@@ -16,6 +17,12 @@ class Navbar extends Component {
     });
   }
 
+  closeNav = () => {
+    this.setState({
+      navOpen: false
+    });
+  }
+
   render() {
 
     const navOpen = this.state.navOpen;
@@ -27,15 +34,26 @@ class Navbar extends Component {
           <RiddlebitLogo className="navbar__logo" />
         </a>
         <nav className="navbar__navlinks">
-          <ul>
-            <li>
-              <i
-                className={toggleIcon + ' navbar__toggle-icon'}
-                onClick={this.toggleNav}>
-              </i>
-            </li>
-            <li className="navbar__navlink">Home</li>
-          </ul>
+          <i
+            className={toggleIcon + ' navbar__toggle-icon'}
+            onClick={this.toggleNav}>
+          </i>
+          <NavLink
+            exact to="/"
+            className="navbar__navlink"
+            activeClassName="navbar__navlink--selected"
+            onClick={this.closeNav}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className="navbar__navlink"
+            activeClassName="navbar__navlink--selected"
+            onClick={this.closeNav}
+          >
+            Blog
+          </NavLink>
         </nav>
       </div>
     );
