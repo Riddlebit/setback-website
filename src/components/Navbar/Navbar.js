@@ -47,14 +47,6 @@ class Navbar extends Component {
             Home
           </NavLink>
           <NavLink
-            exact to="/about"
-            className="navbar__navlink"
-            activeClassName="navbar__navlink--selected"
-            onClick={this.closeNav}
-          >
-            About
-          </NavLink>
-          <NavLink
             to="/blog"
             className="navbar__navlink"
             activeClassName="navbar__navlink--selected"
