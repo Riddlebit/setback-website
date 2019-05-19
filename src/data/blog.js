@@ -18,7 +18,7 @@ export const getPostList = (callback) => {
 }
 
 export const getPost = (postName, callback) => {
-  const request = `${blogUrl}/test/${postName}.md`;
+  const request = `${blogUrl}/blog/${postName}.md`;
   fetch(request, {
     headers: {
       'Accept': 'application/vnd.github.VERSION.raw'
