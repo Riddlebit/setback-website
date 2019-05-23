@@ -5,9 +5,7 @@ const doNotTrack = () => {
     window.doNotTrack === '1' ||
     navigator.doNotTrack === 'yes' ||
     navigator.doNotTrack === '1' ||
-    navigator.msDoNotTrack === '1' ||
-    ('msTrackingProtectionEnabled' in window.external &&
-    window.external.msTrackingProtectionEnabled())
+    navigator.msDoNotTrack === '1'
   );
 }
 
