@@ -28,7 +28,19 @@ const pageview = (pathname) => {
   ReactGA.pageview(pathname);
 }
 
+const event = (category, action, label) => {
+  if (doNotTrack || !gaInitialized) {
+    return;
+  }
+  ReactGA.event({
+    category: category,
+    action: action,
+    label: label
+  });
+}
+
 export default {
   initialize,
-  pageview
+  pageview,
+  event
 }
