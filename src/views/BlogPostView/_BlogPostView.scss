@@ -1,9 +1,9 @@
-.blog-post {
+.blog-post__container {
   display: flex;
   justify-content: center;
 }
 
-.blog-post__container {
+.blog-post__content {
   width: 100%;
   max-width: 1000px;
   padding: 50px;

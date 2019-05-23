@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import ReactMarkdown from "react-markdown";
 import { getPost } from "../../data/blog";
+import Footer from "../../components/Footer/Footer";
 
 class BlogPostView extends Component {
   
@@ -28,12 +29,15 @@ class BlogPostView extends Component {
     return (
       <div className="blog-post">
         <div className="blog-post__container">
-          <Link to="/blog" className="blog-post__back-btn">
-            <i className="fas fa-chevron-left"></i>
-            Back to blog list
-          </Link>
-          <ReactMarkdown source={this.state.postData} />
+          <div className="blog-post__content">
+            <Link to="/blog" className="blog-post__back-btn">
+              <i className="fas fa-chevron-left"></i>
+              Back to blog list
+            </Link>
+            <ReactMarkdown source={this.state.postData} />
+          </div>
         </div>
+        <Footer />
       </div>
     );
   }

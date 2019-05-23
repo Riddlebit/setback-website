@@ -13,6 +13,9 @@
   @media screen and (max-width: $break-mobile-small) {
     width: 90%;
   }
+  @media screen and (max-height: 700px) {
+    margin: 5px;
+  }
 }
 
 .social-card__icon {
