@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba($color: $color-secondary, $alpha: 0.4);
+  @media screen and (max-width: $break-mobile) {
+    flex-direction: column;
+  }
+}
+
+.footer__entry {
+  height: 50px;
+  width: 160px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  text-decoration: none;
+  color: $color-text;
+  @media screen and (max-width: $break-mobile) {
+    width: 100%;
+  }
+}
+
+.footer__copyright {
+  @media screen and (max-width: $break-mobile) {
+    order: 1;
+  }
+}
