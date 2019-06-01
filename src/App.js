@@ -6,6 +6,7 @@ import AboutView from './views/AboutView/AboutView';
 import BlogListView from './views/BlogListView/BlogListView';
 import BlogPostView from './views/BlogPostView/BlogPostView';
 import AnalyticsRouter from './components/AnalyticsRouter/AnalyticsRouter';
+import NotFoundView from './views/NotFoundView/NotFoundView';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/about" component={AboutView} />
           <Route exact path="/blog" component={BlogListView} />
           <Route exact path="/blog/:postName" component={BlogPostView} />
+          <Route component={NotFoundView} />
         </Switch>
         <AnalyticsRouter />
       </BrowserRouter>
