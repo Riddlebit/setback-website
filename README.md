@@ -24,7 +24,7 @@ The website is built using [Node.js](https://nodejs.org) and [React](https://rea
 These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
-Install `Node.js`, `npm` and `Git`
+Install `Node.js`, `npm` and `git`
 
 ### Installation
 1. Clone the repo
