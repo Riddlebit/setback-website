@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SocialCard from '../../components/SocialCard/SocialCard';
 import setbackLogo from '../../assets/setback_logo.png';
-import Footer from '../../components/Footer/Footer';
 
 class HomeView extends Component {
   render() {
@@ -14,7 +13,6 @@ class HomeView extends Component {
             <SocialCard icon="fab fa-twitter" text="Twitter" link="https://twitter.com/setback" />
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
