@@ -46,14 +46,16 @@ class Navbar extends Component {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/blog"
+          <a
+            href="https://blog.riddlebit.net"
+            target="_blank"
+            rel="noopener"
             className="navbar__navlink"
             activeClassName="navbar__navlink--selected"
             onClick={this.closeNav}
           >
             Blog
-          </NavLink>
+          </a>
         </nav>
       </div>
     );
