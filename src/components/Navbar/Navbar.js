@@ -38,24 +38,14 @@ class Navbar extends Component {
             className={toggleIcon + ' navbar__toggle-icon'}
             onClick={this.toggleNav}>
           </i>
-          <NavLink
+          {/* <NavLink
             exact to="/"
             className="navbar__navlink"
             activeClassName="navbar__navlink--selected"
             onClick={this.closeNav}
           >
             Home
-          </NavLink>
-          <a
-            href="https://blog.riddlebit.net"
-            target="_blank"
-            rel="noopener"
-            className="navbar__navlink"
-            activeClassName="navbar__navlink--selected"
-            onClick={this.closeNav}
-          >
-            Blog
-          </a>
+          </NavLink> */}
         </nav>
       </div>
     );

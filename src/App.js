@@ -10,18 +10,10 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route exact path="/" component={HomeView} />
           <Route exact path="/about" component={AboutView} />
-          <Route exact path="/blog" component={() => {
-            window.location.href = "https://blog.riddlebit.net";
-            return null;
-          }} />
-          <Route exact path="/blog/:postName" component={() => {
-            window.location.href = "https://blog.riddlebit.net";
-            return null;
-          }} />
           <Route component={NotFoundView} />
         </Switch>
         <AnalyticsRouter />
